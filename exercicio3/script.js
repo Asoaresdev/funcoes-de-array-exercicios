@@ -11,3 +11,59 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+
+const novoArrayProdutosLimpeza = produtos.filter((produto) => {
+    return produto.categoria === "Limpeza"
+})
+    .map((item) => {
+        return item.nome
+    })
+
+console.log(novoArrayProdutosLimpeza);
+
+
+
+
+//USANDO DOIS ARRAYS
+const array1 = produtos.filter((produto) => {
+    return produto.categoria === "Limpeza"
+})
+
+const array2= array1.map((item) => {
+    return item.nome
+})
+
+console.log(array2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// array.filter((item)=>{
+//     // bloco de código
+// }).map((item)=>{
+//     // bloco de código
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
